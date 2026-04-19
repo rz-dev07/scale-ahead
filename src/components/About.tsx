@@ -10,17 +10,17 @@ type ValueCard = {
 };
 
 const cards: ValueCard[] = [
-  { icon: FiTarget, stat: "15+", label: "Clients Scaled" },
+  { icon: FiTarget, stat: "25+", label: "Clients Scaled" },
   { icon: FiTrendingUp, stat: "3x", label: "Average ROAS", dark: true },
   { icon: FiZap, stat: "14", label: "Days to First Results" },
-  { icon: FiAward, stat: "₹1Cr+", label: "Revenue Generated" },
+  { icon: FiAward, stat: "₹50L+", label: "Revenue Generated" },
 ];
 
 const steps = [
-  { n: "01", title: "Understand", desc: "We learn your business, goals, and market." },
-  { n: "02", title: "Strategise", desc: "Custom growth plan built around your budget." },
-  { n: "03", title: "Launch", desc: "We execute, test, and optimise every rupee." },
-  { n: "04", title: "Scale", desc: "Double down on what works. Remove what doesn't." },
+  { n: "01", title: "Understand Your Business", desc: "We analyze your goals, audience, and current setup to identify growth opportunities." },
+  { n: "02", title: "Build a Growth Plan", desc: "A custom strategy tailored to your business goals and growth potential." },
+  { n: "03", title: "Launch & Optimize Campaigns", desc: "We launch high-converting campaigns and continuously optimize for better results." },
+  { n: "04", title: "Scale What Works", desc: "We double down on winning strategies to maximize growth and revenue." },
 ];
 
 export default function About() {
@@ -71,7 +71,7 @@ export default function About() {
                 <p className="text-sm font-medium text-[#0F172A]">
                   Built by a team obsessed with results
                 </p>
-                <p className="text-xs text-slate-400">15+ businesses scaled</p>
+                <p className="text-xs text-slate-400">25+ businesses scaled</p>
               </div>
             </div>
           </motion.div>
@@ -130,10 +130,10 @@ export default function About() {
                 {i < 3 && (
                   <span
                     aria-hidden
-                    className="hidden md:block absolute right-0 top-8 w-full h-px bg-[#ECF8F6]"
+                    className="hidden md:block absolute right-0 top-8 w-full h-px bg-[#3B9787]/20"
                   />
                 )}
-                <div className="text-6xl font-black text-[#ECF8F6] leading-none mb-2">{s.n}</div>
+                <div className="text-6xl font-black text-[#3B9787]/20 leading-none mb-2">{s.n}</div>
                 <h3 className="text-sm font-bold text-[#0F172A] mb-1">{s.title}</h3>
                 <p className="text-xs text-slate-400 leading-relaxed">{s.desc}</p>
               </motion.div>

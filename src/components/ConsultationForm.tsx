@@ -10,7 +10,7 @@ type FormState = {
   phone: string;
   revenue: string;
 };
-
+  
 export default function ConsultationForm() {
   const [form, setForm] = useState<FormState>({
     name: "",
@@ -109,7 +109,7 @@ export default function ConsultationForm() {
               </div>
               <div>
                 <div className="text-[#45BAA5] text-xs">⭐⭐⭐⭐⭐</div>
-                <p className="text-sm text-slate-400">15+ founders already scaling with us</p>
+                <p className="text-sm text-slate-400">25+ founders already scaling with us</p>
               </div>
             </div>
           </motion.div>
